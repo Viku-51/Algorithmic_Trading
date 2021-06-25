@@ -119,7 +119,8 @@ def checksignal():
                     qty = 1   #qunatity to trade
                     
 
-                    
+                    # Buy Signal will only be triggered when Closing candle data croses SMA and RSI>20
+                  
                     res1= place_order(token,symbol,qty,'BUY','MARKET',0) #buy order
                     res2 = place_order(token,symbol,qty,'SELL','STOPLOSS_MARKET',0,variety='STOPLOSS',triggerprice= SL) #SL order
                     res3 = place_order(token,symbol,qty,'SELL','LIMIT',target) #taget order
