@@ -2,6 +2,21 @@
 # coding: utf-8
 
 # In[ ]:
+# # STEP 1: Get LTP of SPOT . With the help of ltpData() method
+# 
+
+# # STEP 2: Calculate ATM Strike price with help of SPOT
+# 
+
+# # STEP 3: Get token,symbol  of CE Strike 
+# 
+
+# # STEP 4: Get Token , symbol for PE Strike 
+# 
+
+# # STEP 5: place SELL order for CE , PE -Short Strangle/Straddle
+# 
+
 
 
 import warnings
@@ -11,7 +26,7 @@ warnings.filterwarnings('ignore')
 # In[ ]:
 
 
-apikey = '838PSWV'
+apikey = '838PSWV'  #Test use 
 username = 'N788686'
 pwd = 'jhjhjh87'
 
@@ -147,17 +162,3 @@ place_order(ce_strike_symbol['token'],ce_strike_symbol['symbol'],ce_strike_symbo
 place_order(pe_strike_symbol['token'],pe_strike_symbol['symbol'],pe_strike_symbol['lotsize'],'SELL','MARKET',0,'NORMAL','NFO')
 
 
-# # STEP 1: Get LTP of SPOT . Help of ltpData() method
-# 
-
-# # STEP 2: Calculate ATM Strike help of SPOT
-# 
-
-# # STEP 3: Get token,symbol  of CE Strike 
-# 
-
-# # STEP 4: Get Token , symbol for PE Strike 
-# 
-
-# # STEP 5: place SELL order for CE , PE
-# 
